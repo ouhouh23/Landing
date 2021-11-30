@@ -10,3 +10,32 @@ body {
     background: #FFFFFF;
     padding: 0px 0px 158px 184px;
 }
+.header-content-wrapper {
+    display: flex;
+    margin-left: 0.1px;
+    padding-top: 30px;
+}
+.header-content-wrapper img {
+    max-width: 200px;
+    height: 41px;
+}
+.header-content-wrapper nav ul {
+    margin-left: 173.42px;
+}
+.header-content-wrapper nav ul li {
+    display: inline-block;
+}
+.header-content-wrapper nav ul li a {
+    text-decoration: none;
+    color: #696871;
+    margin-right: 49px;
+}
+.header-content-wrapper nav ul li:first-child a {
+    /* Pizdec elegantno, sekonomil na celom odnom klasse*/
+    display: inline-block;/* посмотреть еще раз, почему без него не хотело работать, прописан выше*/
+    width: 42px;
+    color: #19191B;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #5454D4;
+}
+
