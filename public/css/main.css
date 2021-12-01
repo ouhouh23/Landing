@@ -38,4 +38,50 @@ body {
     padding-bottom: 10px;
     border-bottom: 2px solid #5454D4;
 }
+.get-started-button {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 19px 60px 19px 59px;
+    background: #FF7143;
+    border-radius: 10px;
+    width: 211px;
+    heoght: 60px;
+}
+header .get-started-button {
+    margin-left: 109px;
+}
+.content-box-first {
+    display: flex;
+    margin: 100px 110px 0px 0px; 
+}
+.content-box-first-wrapper {
+    max-width: 462px;
+    margin-right: auto;
+    position: relative;
+}
+.content-box-first-wrapper h1 {
+    font-size: 80px;
+    line-height: 77px;
+    margin: 92px 0px 30px 0px;
+}
+.content-box-first-wrapper p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0px 30px 0px 0px;
+    margin-bottom: 50px;
+}
+.content-box-first-wrapper .get-started-button {
+    background: #5454D4;
+}
+.content-box-first-wrapper img {
+      margin-left: 40px;
+      position: absolute;
+      bottom: 93px;
+      padding: 16.75px;
+      border: 1px solid #E7E7E7;
+      border-radius: 50%;
+}
+
 
