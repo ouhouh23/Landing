@@ -49,7 +49,7 @@ body {
 }
 .header-content-wrapper nav ul li:first-child a {
     /* Pizdec elegantno, sekonomil na celom odnom klasse*/
-    display: inline-block;/* посмотреть еще раз, почему без него не хотело работать, прописан выше*/
+    display: inline-block;
     width: 42px;
     color: #19191B;
     padding-bottom: 10px;
@@ -100,7 +100,7 @@ header .get-started-button {
       border: 1px solid #E7E7E7;
       border-radius: 50%;
 }
-article .picture-group {
+.picture-group {
     margin: 100.18px 186.76px 150.44px 2.47px;
     display: flex;
     justify-content: space-between;
