@@ -9,6 +9,17 @@ body {
     max-width: 1440px;
     background: #FFFFFF;
     padding: 0px 0px 158px 184px;
+    font-family: "DM Sans";
+    margin: auto;
+}
+.all-content-wrapper p {
+    font-family: "Mulish";
+    font-size: 20px;
+    line-height: 30px;
+    color: #696871;
+}
+.all-content-wrapper h1, h2, h3, h4, h5 {
+    color: #19191B;
 }
 .header-content-wrapper {
     display: flex;
@@ -29,7 +40,12 @@ body {
 .header-content-wrapper nav ul li a {
     text-decoration: none;
     color: #696871;
-    margin-right: 49px;
+    margin-right: 48px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    
+
 }
 .header-content-wrapper nav ul li:first-child a {
     /* Pizdec elegantno, sekonomil na celom odnom klasse*/
@@ -44,6 +60,8 @@ body {
     text-align: center;
     display: inline-block;
     color: #FFFFFF;
+    font-size: 17px;
+    line-height: 20px;
     padding: 19px 60px 19px 59px;
     background: #FF7143;
     border-radius: 10px;
@@ -68,8 +86,6 @@ header .get-started-button {
     margin: 92px 0px 30px 0px;
 }
 .content-box-first-wrapper p {
-    font-size: 20px;
-    line-height: 30px;
     padding: 0px 30px 0px 0px;
     margin-bottom: 50px;
 }
@@ -106,8 +122,6 @@ line-height: 57px;
 margin: 0px;
 }
 .content-box-second-wrapper p {
-font-size: 20px;
-line-height: 30px;
 margin: 30px 0px;
 padding-right: 45px;
 }
@@ -116,6 +130,7 @@ padding-right: 45px;
     color: #5454D4;
     font-size: 17px;
     line-height: 20px;
+    font-weight: 700;
 }
 .content-box-second:nth-of-type(2) {
     flex-direction: row;
@@ -199,21 +214,18 @@ padding-right: 45px;
     margin: 34px 0px 22px 0px;
     font-weight: normal;
  }
- .block-offer p strong {
-    margin-bottom: 28px;
+ .block-offer h2 {
+    margin: 0px 0px 28px 0px;
     color: #1D293F;
     font-size: 60px;
-    line-height: 56px;
  }
- .block-offer p strong span {
+ .block-offer h2 span {
     font-size: 28px;
-    line-height: 56px
  }
  .block-offer p {
     margin: 0px;
     font-size: 17px;
     line-height: 50px;
-    color: #696871;
  }
  .block-offer a {
     text-decoration: none;
@@ -240,7 +252,7 @@ padding-right: 45px;
     margin-top: 50px;
     color: rgba(255, 255, 255, 0.7);
 }
-.content-box-fifth .active p,  .content-box-fifth .active strong, .content-box-fifth .active span {
+.content-box-fifth .active p,  .content-box-fifth .active h2, .content-box-fifth .active span {
      color: #FFFFFF
 }
 .content-box-fifth .active a {
