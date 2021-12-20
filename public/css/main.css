@@ -5,27 +5,25 @@ body {
     margin: 0;
     background: #FFFFFF;
 }
-.wrapper {
-    max-width: 1440px;
-    padding: 0 0 158px 184px;
-    font-family: "DM Sans";
-    margin: auto;
-}
-.wrapper p {
+p {
     font-family: "Mulish";
     font-size: 20px;
     line-height: 30px;
     color: #696871;
 }
-/*исправить */
-.wrapper h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     color: #19191B;
+}
+.wrapper {
+    max-width: 1440px;
+    padding: 0 186px 158px 184px;   
+    font-family: "DM Sans";
+    margin: auto;
 }
 .header {
     display: flex;
     padding-top: 30px;
     align-items: center;
-    margin-right: 186px;
     justify-content: space-between;
 }
 .header img {
@@ -73,7 +71,7 @@ body {
 }
 .content-box-first {
     display: flex;
-    margin: 100px 110px 0 0; 
+    margin: 100px -76px 0 0; 
 }
 .content-box-first-wrapper {
     max-width: 462px;
@@ -101,7 +99,7 @@ body {
       border-radius: 50%;
 }
 .picture-group {
-    margin: 100.18px 186.76px 150.44px 2.47px;
+    margin: 100px 0 150px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,7 +108,8 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 0 291px 83px 0;
+    margin: 0 105px 83px 0;
+    /* лучше переделать на margin right - auto */
     align-items: center;
 }
 .content-box-second-wrapper {
@@ -134,12 +133,11 @@ padding-right: 45px;
 }
 .content-box-second:nth-of-type(2) {
     flex-direction: row;
-    margin-left: 1px;
 }
 .content-box-third {
     display: flex;
     justify-content: space-between;
-    margin: 150px 185px 150px 1px;
+    margin: 150px 0;
 }
 .content-box-block {
     display: flex;
@@ -161,7 +159,8 @@ padding-right: 45px;
     padding-right: 20px;
 }
 .content-box-fourth {
-    margin: 0 164px 82px 1px;
+    margin: 0 -21px 82px 0px;
+    /*выравнивать дальше!*/
     display: flex;
     align-items: center;
 }
@@ -195,7 +194,7 @@ padding-right: 45px;
 }
 .content-box-fifth {
     display: flex;
-    margin: 0 186px 0 1px;
+    margin: 0;
 }
  .block-offer {
     background: #F8F8F8;
