@@ -69,71 +69,84 @@ h1, h2, h3, h4, h5 {
     width: 211px;
     heoght: 60px;
 }
-.content-box-first {
+
+.banner { 
     display: flex;
-    margin: 100px -76px 0 0; 
+    justify-content: space-between;
+    margin: 0 105px 83px 0;
+    /* лучше переделать на margin right - auto */
+    align-items: center;
 }
-.content-box-first-wrapper {
+.banner.main {
+    margin: 83px -76px 0 0;
+    align-items: flex-start;
+}
+
+.main .text-group {
     max-width: 462px;
     margin-right: auto;
     position: relative;
 }
-.content-box-first-wrapper h1 {
+.main .text-group > h1 {
     font-size: 80px;
     line-height: 77px;
     margin: 92px 0 30px 0;
 }
-.content-box-first-wrapper p {
+.main .text-group > p {
     padding: 0 30px 0 0;
     margin-bottom: 50px;
 }
-.content-box-first-wrapper .get-started-button {
+.main .text-group .get-started-button {
     background: #5454D4;
+    color: #FFFFFF;
+    font-weight: normal;
+    /*Последние два параметра прописаны выше в .get-started-button,
+     но т.к ниже я пишу стайлинг для а в целом и он их переписывает, дополнительно пишу их здесь т.к селектор здесь более точный.
+      Ну это явно полная хуйня
+    */
 }
-.content-box-first-wrapper img {
+.main .text-group > a > img {
       margin-left: 40px;
       position: absolute;
-      bottom: 93px;
+      bottom: 0px;
       padding: 16.75px;
       border: 1px solid #E7E7E7;
       border-radius: 50%;
 }
+
 .picture-group {
     margin: 100px 0 150px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.content-box-second {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: 0 105px 83px 0;
-    /* лучше переделать на margin right - auto */
-    align-items: center;
-}
-.content-box-second-wrapper {
+
+.text-group {
     max-width: 459px;
 }
-.content-box-second-wrapper h3 {
+.text-group > h3 {
 font-size: 50px;
 line-height: 57px;
 margin: 0;
 }
-.content-box-second-wrapper p {
+.text-group > p {
 margin: 30px 0;
 padding-right: 45px;
 }
-.content-box-second-wrapper a {
+.text-group > a {
     text-decoration: none;
     color: #5454D4;
     font-size: 17px;
     line-height: 20px;
     font-weight: 700;
 }
-.content-box-second:nth-of-type(2) {
-    flex-direction: row;
+.banner:nth-of-type(3) {
+    flex-direction: row-reverse;
 }
+
+
+
+
 .content-box-third {
     display: flex;
     justify-content: space-between;
