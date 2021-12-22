@@ -26,30 +26,27 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     justify-content: space-between;
 }
-.header img {
+.header-logo {
     max-width: 200px;
     height: 41px;
 }
-.header nav ul {
+.header-nav > ul {
     padding: 0;
     margin-left: 48px;
     /* Если выше не прописать паддинг 0, слева будет 40. Откуда он берется, какой-то дефолтный у ul? */
 }
-.header nav ul li {
+.header-nav > ul > li {
     display: inline-block;
 }
-.header nav ul li a {
+.header-nav-link {
     text-decoration: none;
     color: #696871;
     margin-right: 48px;
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
-    
-
 }
-.header nav ul li:first-child a {
-    /* Pizdec elegantno, sekonomil na celom odnom klasse*/
+.header-nav-link.active {
     display: inline-block;
     width: 42px;
     color: #19191B;
@@ -69,111 +66,97 @@ h1, h2, h3, h4, h5 {
     width: 211px;
     heoght: 60px;
 }
-
-.banner { 
+.hero {
     display: flex;
     justify-content: space-between;
-    margin: 0 105px 83px 0;
-    /* лучше переделать на margin right - auto */
-    align-items: center;
-}
-.banner.main {
     margin: 83px -76px 0 0;
-    align-items: flex-start;
 }
 
-.main .text-group {
+.hero-text {
     max-width: 462px;
     margin-right: auto;
     position: relative;
 }
-.main .text-group > h1 {
+.hero-text > h1 {
     font-size: 80px;
     line-height: 77px;
     margin: 92px 0 30px 0;
 }
-.main .text-group > p {
+.hero-text > p {
     padding: 0 30px 0 0;
     margin-bottom: 50px;
 }
-.main .text-group .get-started-button {
+.hero-text .get-started-button {
     background: #5454D4;
-    color: #FFFFFF;
-    font-weight: normal;
-    /*Последние два параметра прописаны выше в .get-started-button,
-     но т.к ниже я пишу стайлинг для а в целом и он их переписывает, дополнительно пишу их здесь т.к селектор здесь более точный.
-      Ну это явно полная хуйня
-    */
 }
-.main .text-group > a > img {
-      margin-left: 40px;
-      position: absolute;
-      bottom: 0px;
-      padding: 16.75px;
-      border: 1px solid #E7E7E7;
-      border-radius: 50%;
+.hero-text .link-arrow > img {
+    margin-left: 40px;
+    position: absolute;
+    bottom: 93px;
+    padding: 16px;
+    border: 1px solid #E7E7E7;
+    border-radius: 50%;
 }
-
 .picture-group {
     margin: 100px 0 150px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.illustrated { 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 105px 83px 0;
+    /* лучше переделать на margin right - auto */
+    align-items: center;
+}
 
-.text-group {
+.illustrated-text {
     max-width: 459px;
 }
-.text-group > h3 {
+.illustrated-text > h3 {
 font-size: 50px;
 line-height: 57px;
 margin: 0;
 }
-.text-group > p {
+.illustrated-text > p {
 margin: 30px 0;
-padding-right: 45px;
 }
-.text-group > a {
+.illustrated-text > a {
     text-decoration: none;
     color: #5454D4;
     font-size: 17px;
     line-height: 20px;
     font-weight: 700;
 }
-.banner:nth-of-type(3) {
+.illustrated.reverse {
     flex-direction: row-reverse;
 }
-
-
-
-
-.content-box-third {
+.benefits {
     display: flex;
     justify-content: space-between;
     margin: 150px 0;
 }
-.content-box-block {
+.benefits-item {
     display: flex;
-    max-width: 307px;
+    max-width: 319px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
-.content-box-block h4 {
+.benefit > h4 {
     margin: 20px 0;
     font-size: 24px;
     line-height: 36px;
 }
-.content-box-block p {
+.benefit > p {
     margin: 0;
     font-size: 16px;
     line-height: 24px;
-    text-align: center;
-    padding-right: 20px;
+    text-align-last: center;
 }
 .content-box-fourth {
     margin: 0 -21px 82px 0px;
-    /*выравнивать дальше!*/
     display: flex;
     align-items: center;
 }
