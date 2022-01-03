@@ -3,8 +3,8 @@
 }
 
 body {
-  margin: 0;
   background: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
 }
 
 p {
@@ -12,27 +12,39 @@ p {
   font-size: 20px;
   line-height: 30px;
   color: #696871;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5 {
   color: #19191B;
 }
 
+h1 {
+  font-size: 80px;
+  line-height: 77px;
+  margin: 92px 0 30px 0;
+}
+
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .wrapper {
   max-width: 1440px;
-  padding: 0 186px 158px 184px;   
-  font-family: "DM Sans", sans-serif;
+  padding: 0 185px;   
   margin: auto;
 }
 
+/**
+ * header block
+ */
 .header {
   display: flex;
   padding-top: 30px;
@@ -40,22 +52,19 @@ a {
   justify-content: space-between;
 }
 
-.header-logo {
+.logo {
   max-width: 200px;
   height: 41px;
 }
 
-.header-nav > ul {
-  padding: 0;
-  margin-left: 48px;
-  /* Если выше не прописать паддинг 0, слева будет 40. Откуда он берется, какой-то дефолтный у ul? */
+.nav {
+  padding-left: 48px; 
 }
+/*Раньше стайлил .nav>ul margin-left 48px.* Если сейчас я стайлю имеено блок, лучше паддингом? 
+т.к можнол и margin написать и тот же эффект*/
 
-.header-nav > ul > li {
+.nav-link {
   display: inline-block;
-}
-
-.header-nav-link {
   color: #696871;
   margin-right: 48px;
   font-weight: 600;
@@ -63,14 +72,15 @@ a {
   line-height: 18px;
 }
 
-.header-nav-link.active {
-  display: inline-block;
-  width: 42px;
+.nav-link.active {
   color: #19191B;
   padding-bottom: 10px;
   border-bottom: 2px solid #5454D4;
 }
 
+/**
+ * common button block
+ */
 .button {
   color: #FFFFFF;
   font-size: 17px;
@@ -84,10 +94,69 @@ a {
 /* Интересно, что из враппера шрифт на кнопку не подтянулся, пришлось писать здесь*/
 }
 
-.header-go.button {
+/**
+ * header button
+ */
+.button-primary {
   background: #FF7143;
 }
 
+/**
+ * hero button
+ */
+.button-secondary {
+  background: #5454D4;
+}
+
+/**
+ * offer-header button
+ */
+.button-period {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 17px 0;
+  height: 55px;
+}
+
+.button-period:first-child {
+  background: #5454D4;
+  border-radius: 10px 0 0 10px;
+}
+
+.button-period:last-child {
+  color: #19191B;
+  background: #F7F7FB;
+  border-radius: 0 10px 10px 0;
+}
+
+/**
+ * pricing plan button
+ */
+.button-plan.button {
+  background: #FFFFFF;
+  border: 1px solid #EAE9F2;
+  border-radius: 10px;
+  width: 100%;
+  margin: 36px 0 27px 0;
+  
+}
+.button-light.button {
+  font-weight: 500;
+  color: #5454D4;
+}
+
+.pricing-plan.optimal .button-plan.button {
+  background: #9F3919;
+  border: none;
+}
+
+.pricing-plan.optimal .button-light.button { 
+  color: #FFFFFF;
+}
+
+/**
+ * hero block
+ */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -97,61 +166,63 @@ a {
 .hero-text {
   max-width: 462px;
   margin-right: auto;
-  position: relative;
 }
 
-.hero-text > h1 {
-  font-size: 80px;
-  line-height: 77px;
-  margin: 92px 0 30px 0;
-}
-
-.hero-text > p {
-  padding: 0 30px 0 0;
-  margin-bottom: 50px;
-}
-
-.hero-go.button {
-  background: #5454D4;
-}
-
-.hero-text .link-arrow > img {
-  margin-left: 40px;
-  position: absolute;
-  bottom: 93px;
+.link-image {
+  width: 60px;
+  height: 60px;
+  margin: 50px 0 0 40px;
   padding: 16px;
   border: 1px solid #E7E7E7;
   border-radius: 50%;
+  vertical-align: bottom;
 }
+/*.link-image-это непосредственно img. Застайлить норм через родительский блок не получилось, чуть хуюжится окружность,
+ наверное из-за отрицательного марджина на hero*/
 
+/**
+ * picture-group block
+ */
 .picture-group {
-  margin: 100px 0 150px 0;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/**
+ * common bottom indent for some sections
+ */
+.indent-bottom {
+  margin-bottom: 150px;
+}
+
+/**
+ * illustrated block
+ */
 .illustrated { 
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 83px 0;
+  margin-top: 75px;
+  margin-right: auto;
   align-items: center;
 }
 
 .illustrated-text {
-  max-width: 459px;
+  max-width: 460px;
 }
 
-.illustrated-text > h3 {
+.illustrated-heading {
   font-size: 50px;
   line-height: 57px;
   margin: 0;
 }
 
-.illustrated-text > p {
+.illustrated-paragraph {
   margin: 30px 0;
 }
 
-.illustrated-text > a {
+.illustrated-link {
   color: #5454D4;
   font-size: 17px;
   line-height: 20px;
@@ -162,13 +233,15 @@ a {
   flex-direction: row-reverse;
 }
 
+/**
+ * benefits block
+ */
 .benefits {
   display: flex;
   justify-content: space-between;
-  margin: 150px 0;
 }
 
-.benefits-item {
+.benefit {
   display: flex;
   max-width: 319px;
   flex-direction: column;
@@ -176,21 +249,23 @@ a {
   justify-content: flex-end;
 }
 
-.benefit > h4 {
+.benefit-heading {
   margin: 20px 0;
   font-size: 24px;
   line-height: 36px;
 }
 
-.benefit > p {
+.benefit-paragraph {
   margin: 0;
   font-size: 16px;
   line-height: 24px;
   text-align-last: center;
 }
 
+/**
+ * offer block
+ */
 .offer {
-  margin: 0 -21px 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -199,16 +274,17 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 82px;
+  margin-right: -21px;
 }
 
-.offer-header > h2 {
+.offer-heading {
   max-width: 543px;
   font-size: 60px;
   line-height: 70px;
   margin: 0 auto 0 0;
 }
 
-.offer-period {
+.button-group {
   max-width: 344px;
   border: 5px solid #F7F7FB;
   background:#F7F7FB;
@@ -218,24 +294,6 @@ a {
 */
   border-radius: 10px;
   display: flex;
-}
-
-.pricing-period.button {
-  font-size: 16px;
-  line-height: 19px;
-  padding: 17px 0;
-  height: 55px;
-}
-
-.pricing-period.button:first-child {
-  background: #5454D4;
-  border-radius: 10px 0 0 10px;
-}
-
-.pricing-period.button:last-child {
-  color: #19191B;
-  background: #F7F7FB;
-  border-radius: 0 10px 10px 0;
 }
 
 .offer-pricing {
@@ -254,7 +312,8 @@ a {
   align-items: center;
   max-width: 330px;
 }
-.pricing-plan > h5 {
+
+.pricing-level {
   color: #696871;
   font-size: 18px;
   line-height: 28px;
@@ -262,36 +321,21 @@ a {
   font-weight: normal;
 }
 
-.pricing-plan > h2 {
+.pricing-heading {
   margin: 0 0 28px 0;
   color: #1D293F;
   font-size: 60px;
 }
 
-.pricing-plan > h2 > span {
+.cost-period {
   font-size: 28px;
 }
 
-.pricing-plan > ul {
-  margin: 0;
-  padding: 0;
-}
-
-.pricing-plan > ul > li {
+.pricing-list-item {
   font-size: 17px;
   line-height: 50px;
   font-family: "Mulush", sans-serif;
  }
-
-.plan-selection.button {
-  color: #5454D4;
-  background: #FFFFFF;
-  border: 1px solid #EAE9F2;
-  border-radius: 10px;
-  width: 100%;
-  margin: 36px 0 27px 0;
-  font-weight: 500;
-}
 
 .pricing-plan.optimal {
   background: #FF7143;
@@ -300,19 +344,13 @@ a {
   max-width: 376px;
 }
 
-.pricing-plan.optimal > h5 {
+.pricing-plan.optimal .pricing-level {
   margin-top: 50px;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.pricing-plan.optimal > ul,  .pricing-plan.optimal > h2, .pricing-plan.optimal > span {
+.pricing-plan.optimal .pricing-list-item,  .pricing-plan.optimal .pricing-heading , .pricing-plan.optimal .cost-period {
    color: #FFFFFF
-}
-
-.pricing-plan.optimal .plan-selection.button {
-  color: #FFFFFF;
-  background: #9F3919;
-  border: none;
 }
 
 
