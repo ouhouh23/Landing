@@ -1,3 +1,6 @@
+/**
+ * Base styles
+ */
 * {
   box-sizing: border-box;
 }
@@ -35,7 +38,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+/**
+ * Layout
+ */
 .wrapper {
   max-width: 1440px;
   padding: 0 185px;   
@@ -51,17 +56,19 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-
+/**
+ * Logo block
+ */
 .logo {
   max-width: 200px;
   height: 41px;
 }
-
+/**
+ * Nav block
+ */
 .nav {
   padding-left: 48px; 
 }
-/*Раньше стайлил .nav>ul margin-left 48px.* Если сейчас я стайлю имеено блок, лучше паддингом? 
-т.к можнол и margin написать и тот же эффект*/
 
 .nav-link {
   display: inline-block;
@@ -79,7 +86,7 @@ a {
 }
 
 /**
- * common button block
+ * button block
  */
 .button {
   color: #FFFFFF;
@@ -91,27 +98,25 @@ a {
   width: 211px;
   height: 60px;
   font-family: "DM Sans", sans-serif;
-/* Интересно, что из враппера шрифт на кнопку не подтянулся, пришлось писать здесь*/
 }
 
-/**
- * header button
- */
 .button-primary {
   background: #FF7143;
 }
 
-/**
- * hero button
- */
 .button-secondary {
   background: #5454D4;
+
+}
+.button-gray {
+  color: #19191B;
+  background: #F7F7FB;
 }
 
 /**
- * offer-header button
+ * Button-group block
  */
-.button-period {
+.button-group-item {
   font-size: 16px;
   line-height: 19px;
   padding: 17px 0;
@@ -119,40 +124,29 @@ a {
 }
 
 .button-period:first-child {
-  background: #5454D4;
   border-radius: 10px 0 0 10px;
 }
 
 .button-period:last-child {
-  color: #19191B;
-  background: #F7F7FB;
   border-radius: 0 10px 10px 0;
 }
 
 /**
- * pricing plan button
+ * pricing-plan-button
  */
-.button-plan.button {
+.button-light {
   background: #FFFFFF;
   border: 1px solid #EAE9F2;
-  border-radius: 10px;
-  width: 100%;
-  margin: 36px 0 27px 0;
-  
-}
-.button-light.button {
-  font-weight: 500;
   color: #5454D4;
-}
+  font-weight: 500;
 
-.pricing-plan.optimal .button-plan.button {
+}
+.button-dark {
   background: #9F3919;
   border: none;
+  color: #FFFFFF; 
 }
 
-.pricing-plan.optimal .button-light.button { 
-  color: #FFFFFF;
-}
 
 /**
  * hero block
@@ -168,17 +162,17 @@ a {
   margin-right: auto;
 }
 
-.link-image {
+.link-arrow {
+  display: inline-block;
   width: 60px;
   height: 60px;
   margin: 50px 0 0 40px;
-  padding: 16px;
+  padding: 16px 16px 16px 17px;
   border: 1px solid #E7E7E7;
   border-radius: 50%;
   vertical-align: bottom;
 }
-/*.link-image-это непосредственно img. Застайлить норм через родительский блок не получилось, чуть хуюжится окружность,
- наверное из-за отрицательного марджина на hero*/
+
 
 /**
  * picture-group block
@@ -288,10 +282,6 @@ a {
   max-width: 344px;
   border: 5px solid #F7F7FB;
   background:#F7F7FB;
-/* Вынужден написать background. Иначе есть разрывы по цвету. 
-При стайлинге в button я отключил границы, но почему-то они все равно просранственно учитываются.
- Есть ли другой способ этого избежать?
-*/
   border-radius: 10px;
   display: flex;
 }
@@ -300,7 +290,9 @@ a {
   display: flex;
   margin: 0;
 }
-
+/**
+ * Pricing-plan block
+ */
 .pricing-plan {
   background: #F8F8F8;
   border-radius: 10px;
@@ -313,7 +305,7 @@ a {
   max-width: 330px;
 }
 
-.pricing-level {
+.pricing-plan-level {
   color: #696871;
   font-size: 18px;
   line-height: 28px;
@@ -321,37 +313,43 @@ a {
   font-weight: normal;
 }
 
-.pricing-heading {
+.pricing-plan-heading {
   margin: 0 0 28px 0;
   color: #1D293F;
   font-size: 60px;
 }
 
-.cost-period {
+.pricing-plan-cost-period {
   font-size: 28px;
 }
 
-.pricing-list-item {
+.pricing-plan-list-item {
   font-size: 17px;
   line-height: 50px;
   font-family: "Mulush", sans-serif;
  }
+.pricing-plan-button { 
+  width: 100%;
+  margin: 36px 0 27px 0;
+}
 
 .pricing-plan.optimal {
   background: #FF7143;
+  color: #FFFFFF;
   margin: 0 22px;
   padding: 0 35px;
   max-width: 376px;
 }
 
-.pricing-plan.optimal .pricing-level {
+.pricing-plan.optimal > .pricing-plan-level {
   margin-top: 50px;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.pricing-plan.optimal .pricing-list-item,  .pricing-plan.optimal .pricing-heading , .pricing-plan.optimal .cost-period {
-   color: #FFFFFF
+.pricing-plan-heading {
+  color: inherit;
 }
+
 
 
 
