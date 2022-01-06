@@ -38,6 +38,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 /**
  * Layout
  */
@@ -47,8 +48,12 @@ a {
   margin: auto;
 }
 
+.indent-bottom {
+  margin-bottom: 150px;
+}
+
 /**
- * header block
+ * Header block
  */
 .header {
   display: flex;
@@ -56,6 +61,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+
 /**
  * Logo block
  */
@@ -63,6 +69,7 @@ a {
   max-width: 200px;
   height: 41px;
 }
+
 /**
  * Nav block
  */
@@ -86,7 +93,7 @@ a {
 }
 
 /**
- * button block
+ * Button block
  */
 .button {
   color: #FFFFFF;
@@ -113,9 +120,30 @@ a {
   background: #F7F7FB;
 }
 
+.button-light {
+  background: #FFFFFF;
+  border: 1px solid #EAE9F2;
+  color: #5454D4;
+  font-weight: 500;
+
+}
+.button-dark {
+  background: #9F3919;
+  border: none;
+  color: #FFFFFF; 
+}
+
 /**
- * Button-group block
+ * Button Group block
  */
+.button-group {
+  max-width: 344px;
+  border: 5px solid #F7F7FB;
+  background:#F7F7FB;
+  border-radius: 10px;
+  display: flex;
+}
+
 .button-group-item {
   font-size: 16px;
   line-height: 19px;
@@ -132,24 +160,7 @@ a {
 }
 
 /**
- * pricing-plan-button
- */
-.button-light {
-  background: #FFFFFF;
-  border: 1px solid #EAE9F2;
-  color: #5454D4;
-  font-weight: 500;
-
-}
-.button-dark {
-  background: #9F3919;
-  border: none;
-  color: #FFFFFF; 
-}
-
-
-/**
- * hero block
+ * Hero block
  */
 .hero {
   display: flex;
@@ -173,9 +184,8 @@ a {
   vertical-align: bottom;
 }
 
-
 /**
- * picture-group block
+ * Picture Group block
  */
 .picture-group {
   margin-top: 100px;
@@ -185,14 +195,7 @@ a {
 }
 
 /**
- * common bottom indent for some sections
- */
-.indent-bottom {
-  margin-bottom: 150px;
-}
-
-/**
- * illustrated block
+ * Illustrated block
  */
 .illustrated { 
   display: flex;
@@ -228,13 +231,16 @@ a {
 }
 
 /**
- * benefits block
+ * Benefits block
  */
 .benefits {
   display: flex;
   justify-content: space-between;
 }
 
+/**
+ * Benefit block
+ */
 .benefit {
   display: flex;
   max-width: 319px;
@@ -257,7 +263,7 @@ a {
 }
 
 /**
- * offer block
+ * Offer block
  */
 .offer {
   display: flex;
@@ -278,20 +284,13 @@ a {
   margin: 0 auto 0 0;
 }
 
-.button-group {
-  max-width: 344px;
-  border: 5px solid #F7F7FB;
-  background:#F7F7FB;
-  border-radius: 10px;
-  display: flex;
-}
-
 .offer-pricing {
   display: flex;
   margin: 0;
 }
+
 /**
- * Pricing-plan block
+ * Pricing Plan block
  */
 .pricing-plan {
   background: #F8F8F8;
@@ -328,6 +327,7 @@ a {
   line-height: 50px;
   font-family: "Mulush", sans-serif;
  }
+ 
 .pricing-plan-button { 
   width: 100%;
   margin: 36px 0 27px 0;
@@ -346,10 +346,6 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.pricing-plan-heading {
+.pricing-plan.optimal .pricing-plan-heading {
   color: inherit;
 }
-
-
-
-
