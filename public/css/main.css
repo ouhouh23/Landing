@@ -262,6 +262,10 @@ a {
   text-align-last: center;
 }
 
+.benefit__image {
+  margin-left: 43px;
+}
+
 /**
  * Offer block
  */
@@ -326,6 +330,7 @@ a {
   font-size: 17px;
   line-height: 50px;
   font-family: "Mulush", sans-serif;
+  text-align: center;
  }
  
 .pricing-plan__button { 
