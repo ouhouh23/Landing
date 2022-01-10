@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 6.8vmin;
   line-height: 77px;
   margin: 92px 0 30px 0;
 }
@@ -39,6 +39,10 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 /**
  * Layout
  */
@@ -99,7 +103,6 @@ a {
   color: #FFFFFF;
   font-size: 17px;
   line-height: 20px;
-  padding: 19px 60px;
   border-radius: 10px;
   border: none;
   width: 211px;
@@ -171,6 +174,18 @@ a {
 .hero__text {
   max-width: 462px;
   margin-right: auto;
+}
+
+.hero__text > h1 {
+  font-size: 80px;
+}
+
+/**
+ * Потом переписать через класс, очень странная хуйня с офервлоу,
+ дошел до нее случайно, без нее пикча хуй жмется до переноса.
+ */
+.hero > img {
+  overflow: auto;
 }
 
 .link-arrow {
@@ -336,6 +351,7 @@ a {
 .pricing-plan__button { 
   width: 100%;
   margin: 36px 0 27px 0;
+  padding: 19px 60px;
 }
 
 .pricing-plan_optimal {
