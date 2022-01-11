@@ -173,8 +173,7 @@ img {
 }
 
 .hero__text {
-  max-width: 462px;
-  margin-right: auto;
+  max-width: 44%;
 }
 
 /**
@@ -373,4 +372,22 @@ img {
 
 .pricing-plan_optimal > .pricing-plan__heading {
   color: inherit;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 3.4rem;
+  }
+
+  .wrapper {
+    padding: 0 50px;   
+  }
+
+  .hero {
+    margin-right: 0;
+
+  }
+
 }
