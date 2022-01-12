@@ -212,7 +212,6 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 75px;
-  margin-right: auto;
   align-items: center;
   padding-right: 106px;
   /* Добавил паддинг, блоки все время был неправильно выравнены,
@@ -224,8 +223,8 @@ img {
 }
 
 .illustrated__heading {
-  font-size: 50px;
-  line-height: 57px;
+  font-size: 3.12rem;
+  line-height: 3.56rem;
   margin: 0;
 }
 
@@ -301,8 +300,8 @@ img {
 
 .offer__heading {
   max-width: 543px;
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 3.75rem;
+  line-height: 4.37rem;
   margin: 0 auto 0 0;
 }
 
@@ -387,7 +386,96 @@ img {
 
   .hero {
     margin-right: 0;
-
   }
+
+  .illustrated__heading {
+    font-size: 2.5rem;
+    line-height:2.8rem ;
+  }
+
+  .offer__heading, .pricing-plan__heading {
+    font-size: 3.12rem;
+    line-height: 3.7rem;
+  }
+  .offer__heading {
+    width: 47%;  
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    margin: 30px auto
+  }
+
+  .button_primary {
+    margin-right: auto;
+  }
+
+  .hero {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .hero__text {
+    max-width: 100%;
+    margin-bottom: 92px;
+  }
+
+  .picture-group {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .picture-group__item {
+    padding: 20px;
+  }
+
+  .indent-bottom {
+    margin-bottom: 75px;
+  }
+
+  .illustrated {
+    padding-right: 0;
+  }
+
+  .offer__pricing {
+    flex-direction: column;
+  }
+  .pricing-plan {
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  .pricing-plan__button {
+    max-width: 211px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pricing-plan__heading, .pricing-plan__level {
+    margin: 0;
+  }
+
+  .pricing-plan__cost-period {
+    display: block;
+  }
+
+  .pricing-plan_optimal {
+    margin: 0;
+    padding: 0 21px;
+  }
+
+  .pricing-plan_optimal > .pricing-plan__level {
+    margin-top: 0;
+  }
+
 
 }
