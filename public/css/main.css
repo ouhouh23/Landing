@@ -13,8 +13,8 @@ body {
 
 p {
   font-family: "Mulish", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.88rem;
   color: #696871;
   margin: 0;
 }
@@ -87,8 +87,8 @@ img {
   color: #696871;
   margin-right: 48px;
   font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 0.94rem;
+  line-height: 1.12rem;
 }
 
 .nav__link_active {
@@ -102,8 +102,8 @@ img {
  */
 .button {
   color: #FFFFFF;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.06rem;
+  line-height: 1.25rem;
   border-radius: 10px;
   border: none;
   width: 211px;
@@ -149,8 +149,8 @@ img {
 }
 
 .button-group__item {
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.19rem;
   padding: 17px 0;
   height: 55px;
 }
@@ -234,8 +234,8 @@ img {
 
 .illustrated__link {
   color: #5454D4;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.06rem;
+  line-height: 1.25rem;
   font-weight: 700;
 }
 
@@ -273,13 +273,13 @@ img {
 .benefit__heading {
   margin: 20px 0;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 .benefit__paragraph {
   margin: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -327,8 +327,8 @@ img {
 
 .pricing-plan__level {
   color: #696871;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.12rem;
+  line-height: 1.75rem;
   margin: 34px 0 22px 0;
   font-weight: normal;
 }
@@ -336,16 +336,16 @@ img {
 .pricing-plan__heading {
   margin: 0 0 28px 0;
   color: #1D293F;
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .pricing-plan__cost-period {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .pricing-plan__list-item {
-  font-size: 17px;
-  line-height: 50px;
+  font-size: 1.06rem;
+  line-height: 3.12rem;
   font-family: "Mulush", sans-serif;
   text-align: center;
  }
