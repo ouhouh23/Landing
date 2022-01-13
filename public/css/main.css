@@ -448,6 +448,7 @@ img {
   .offer__pricing {
     flex-direction: column;
   }
+  
   .pricing-plan {
     flex-direction: row;
     max-width: 100%;
@@ -475,6 +476,67 @@ img {
 
   .pricing-plan_optimal > .pricing-plan__level {
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .nav {
+    padding-left: 0;
+  }
+
+  h1 {
+    font-size: 2.45rem;
+    line-height: 2.65rem;
+  }
+
+  .hero__text {
+    margin-bottom: 50px;
+  }
+
+  .link-arrow {
+    margin-top: 25px;
+  }
+
+  .illustrated {
+    flex-wrap: wrap;
+  }
+
+  .illustrated__text {
+    max-width: 100%;
+  }
+
+  .illustrated__image {
+    margin: 25px auto 0 auto;
+  }
+
+  .indent-bottom {
+    margin-bottom: 50px;
+  }
+
+  .benefits {
+    flex-direction: column;
+  }
+
+  .benefit {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .offer__header {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .offer__heading {
+    font-size: 2.19rem;
+    line-height: 2.5rem;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .button-group {
+    margin: 0 auto;
   }
 
 
