@@ -1,20 +1,24 @@
 /**
  * Base styles
  */
+html {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background: #FFFFFF;
-  font-family: "DM Sans", sans-serif;
   margin: 0;
 }
 
 p {
   font-family: "Mulish", sans-serif;
   font-size: 1.25rem;
-  line-height: 1.88rem;
+  line-height: 1.90rem;
   color: #696871;
   margin: 0;
 }
@@ -26,7 +30,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 5rem;
   line-height: 4.8rem;
-  margin: 92px 0 30px 0;
+  margin: 5.75rem 0 1.90rem 0;
 }
 
 ul {
@@ -44,17 +48,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /**
  * Layout
  */
 .wrapper {
   max-width: 1440px;
-  padding: 0 185px;   
+  padding: 0 11.55rem;   
   margin: auto;
 }
 
 .indent-bottom {
-  margin-bottom: 150px;
+  margin-bottom: 9.4rem;
 }
 
 /**
@@ -65,14 +70,6 @@ img {
   padding-top: 30px;
   align-items: center;
   justify-content: space-between;
-}
-
-/**
- * Logo block
- */
-.logo {
-  max-width: 200px;
-  height: 41px;
 }
 
 /**
@@ -106,8 +103,8 @@ img {
   line-height: 1.25rem;
   border-radius: 10px;
   border: none;
-  width: 211px;
-  height: 60px;
+  width: 13.12rem;
+  height: 3.75rem;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -141,7 +138,7 @@ img {
  * Button Group block
  */
 .button-group {
-  max-width: 344px;
+  max-width: 21.5rem;
   border: 5px solid #F7F7FB;
   background:#F7F7FB;
   border-radius: 10px;
@@ -150,8 +147,8 @@ img {
 
 .button-group__item {
   font-size: 1rem;
-  line-height: 1.19rem;
-  padding: 17px 0;
+  line-height: 1.20rem;
+  padding: 17px;
   height: 55px;
 }
 
@@ -169,26 +166,22 @@ img {
 .hero {
   display: flex;
   justify-content: space-between;
-  margin: 83px -76px 0 0;
+  margin: 5.20rem -4.75rem 0 0;
 }
 
 .hero__text {
   max-width: 44%;
 }
 
-/**
- * Потом переписать через класс, очень странная хуйня с офервлоу,
- дошел до нее случайно, без нее пикча хуй жмется до переноса.
- */
-.hero > img {
-  overflow: auto;
+.hero__image {
+  min-width: 0;
 }
 
 .link-arrow {
   display: inline-block;
   width: 60px;
   height: 60px;
-  margin: 50px 0 0 40px;
+  margin: 3.13rem 0 0 2.50rem;
   padding: 16px 16px 16px 17px;
   border: 1px solid #E7E7E7;
   border-radius: 50%;
@@ -199,7 +192,7 @@ img {
  * Picture Group block
  */
 .picture-group {
-  margin-top: 100px;
+  margin-top: 6.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -211,19 +204,19 @@ img {
 .illustrated { 
   display: flex;
   justify-content: space-between;
-  margin-top: 75px;
+  margin-top: 4.70rem;
   align-items: center;
-  padding-right: 106px;
+  padding-right: 6.60rem;
   /* Добавил паддинг, блоки все время был неправильно выравнены,
   почему-то не заметили */
 }
 
 .illustrated__text {
-  max-width: 460px;
+  max-width: 29rem;
 }
 
 .illustrated__heading {
-  font-size: 3.12rem;
+  font-size: 3.10rem;
   line-height: 3.56rem;
   margin: 0;
 }
@@ -250,6 +243,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-left: -25px;
+  margin-right: -25px;
 }
 
 /**
@@ -257,13 +252,10 @@ img {
  */
 .benefit {
   display: flex;
-  max-width: 319px;
+  max-width: 20rem;
   flex-direction: column;
   align-items: center;
-}
-
-.benefit_middle-indent {
-  margin: 0 25px;
+  margin: 0 13px;
 }
 
 .benefit__image {
@@ -272,14 +264,14 @@ img {
 
 .benefit__heading {
   margin: 20px 0;
-  font-size: 24px;
+  font-size: 1.50rem;
   line-height: 2.25rem;
 }
 
 .benefit__paragraph {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.50rem;
   text-align: center;
 }
 
@@ -294,15 +286,16 @@ img {
 .offer__header {
   display: flex;
   align-items: center;
-  margin-bottom: 82px;
+  margin-bottom: 5.10rem;
   margin-right: -21px;
 }
 
 .offer__heading {
-  max-width: 543px;
+  max-width: 34rem;
   font-size: 3.75rem;
   line-height: 4.37rem;
   margin: 0 auto 0 0;
+
 }
 
 .offer__pricing {
@@ -317,12 +310,12 @@ img {
   background: #F8F8F8;
   border-radius: 10px;
   margin: 16px 0;
-  padding: 0 21px;
+  padding: 0 21px 27px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 330px;
+  max-width: 20.60rem;
 }
 
 .pricing-plan__level {
@@ -330,7 +323,7 @@ img {
   font-size: 1.12rem;
   line-height: 1.75rem;
   margin: 34px 0 22px 0;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .pricing-plan__heading {
@@ -343,16 +336,17 @@ img {
   font-size: 1.75rem;
 }
 
-.pricing-plan__list-item {
+.pricing-plan_list {
   font-size: 1.06rem;
   line-height: 3.12rem;
   font-family: "Mulush", sans-serif;
   text-align: center;
+  margin: auto;
  }
  
 .pricing-plan__button { 
   width: 100%;
-  margin: 36px 0 27px 0;
+  margin-top: 36px;
   padding: 19px 60px;
 }
 
@@ -360,12 +354,12 @@ img {
   background: #FF7143;
   color: #FFFFFF;
   margin: 0 22px;
-  padding: 0 35px;
-  max-width: 376px;
+  padding: 0 35px 43px;
+  max-width: 23.50rem;
 }
 
 .pricing-plan_optimal > .pricing-plan__level {
-  margin-top: 50px;
+  margin-top: 3.1rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -406,7 +400,11 @@ img {
   }
 
   .offer__heading {
-    width: 47%;  
+    max-width: 100%;  
+  }
+
+  .button-group {
+    margin-left: 30px;
   }
 }
 
@@ -463,6 +461,10 @@ img {
     flex-direction: column;
   }
 
+  .offer__heading {
+    text-align: center;
+  }
+
   /* Прописывал width и max-width. По-другому почему-то не работает,
   и переписывал для optimal ширину, лучше варианта не придумал. Писал height 
   иначе они квадратные, херово смотрятся. Опять же, не придумал лучше*/
@@ -470,7 +472,7 @@ img {
     max-width: 60%;
     width: 60%;
     margin: 25px auto;
-    height: 550px;
+    min-height: 445px;
     justify-content: space-around;
   }
 
@@ -531,8 +533,7 @@ img {
   }
 
   .benefit {
-    max-width: 100%;
-    margin-bottom: 25px;
+    margin: 0 auto 40px;
   }
 
   .offer__header {
@@ -543,7 +544,6 @@ img {
   .offer__heading {
     font-size: 2.19rem;
     line-height: 2.5rem;
-    width: 100%;
     margin-bottom: 25px;
   }
 
