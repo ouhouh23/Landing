@@ -29,8 +29,31 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 5rem;
-  line-height: 4.8rem;
-  margin: 5.75rem 0 1.90rem 0;
+  line-height: 4.80rem;
+  margin: 5.75rem 0 1.90rem;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 3.40rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  h1 {
+    font-size: 2.45rem;
+    line-height: 2.65rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  h1 {
+    margin-top: 3.10rem;
+  }
 }
 
 ul {
@@ -58,9 +81,38 @@ img {
   margin: auto;
 }
 
-.indent-bottom {
-  margin-bottom: 9.4rem;
+@media only screen and (max-width: 1300px) {
+
+  .wrapper {
+    padding: 0 3.10rem;   
+  }
 }
+
+@media only screen and (max-width: 450px) {
+
+  .wrapper {
+    padding: 0 1.90rem;
+  }
+}
+
+.indent-bottom {
+  margin-bottom: 9.40rem;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .indent-bottom {
+    margin-bottom: 4.70rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .indent-bottom {
+    margin-bottom: 3.10rem;
+  }
+}
+
 
 /**
  * Header block
@@ -72,11 +124,42 @@ img {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 900px) {
+
+  .header {
+    flex-wrap: wrap;
+  }
+}
+
+/**
+ * Logo block
+ */
+@media only screen and (max-width: 900px) {
+
+  .logo {
+    margin-bottom: 1.90rem;
+  }
+}
+
 /**
  * Nav block
  */
 .nav {
   padding-left: 48px; 
+}
+
+@media only screen and (max-width: 900px) {
+
+  .nav {
+    margin: 0 auto 1.90rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .nav {
+    padding-left: 0;
+  }
 }
 
 .nav__link {
@@ -103,8 +186,7 @@ img {
   line-height: 1.25rem;
   border-radius: 10px;
   border: none;
-  width: 13.12rem;
-  height: 3.75rem;
+  padding: 1.20rem 2.80rem;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -112,10 +194,24 @@ img {
   background: #FF7143;
 }
 
+@media only screen and (max-width: 900px) {
+
+  .button_primary {
+    margin-right: auto;
+  }
+}
+
 .button_secondary {
   background: #5454D4;
-
 }
+
+@media only screen and (max-width: 450px) {
+
+  .hero__text > .button_secondary {
+    margin-top: 1.55rem;
+  }
+}
+
 .button_gray {
   color: #19191B;
   background: #F7F7FB;
@@ -145,11 +241,31 @@ img {
   display: flex;
 }
 
+@media only screen and (max-width: 1300px) {
+
+  .button-group {
+    margin-left: 1.90rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .button-group {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .button-group {
+    flex-direction: column;
+  }
+}
+
 .button-group__item {
   font-size: 1rem;
   line-height: 1.20rem;
-  padding: 17px;
-  height: 55px;
+  padding: 1.20rem 3.80rem;
 }
 
 .button-group__item:first-child {
@@ -169,8 +285,38 @@ img {
   margin: 5.20rem -4.75rem 0 0;
 }
 
+@media only screen and (max-width: 1300px) {
+
+  .hero {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  
+ .hero {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
 .hero__text {
   max-width: 44%;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .hero__text {
+    max-width: 100%;
+    margin-bottom: 5.75rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .hero__text {
+    margin-bottom: 3.10rem;
+  }
 }
 
 .hero__image {
@@ -188,6 +334,20 @@ img {
   vertical-align: bottom;
 }
 
+@media only screen and (max-width: 720px) {
+
+  .link-arrow {
+    margin-top: 1.55rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .link-arrow {
+    margin-left: 40%;
+  }
+}
+
 /**
  * Picture Group block
  */
@@ -196,6 +356,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .picture-group {
+    margin-top: 3.10rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .picture-group__item {
+    padding: 20px;
+  }
 }
 
 /**
@@ -207,18 +380,49 @@ img {
   margin-top: 4.70rem;
   align-items: center;
   padding-right: 6.60rem;
-  /* Добавил паддинг, блоки все время был неправильно выравнены,
-  почему-то не заметили */
+}
+
+@media only screen and (max-width: 900px) {
+
+  .illustrated {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .illustrated {
+    flex-wrap: wrap;
+  }
+
+  .illustrated__image {
+    margin: 25px auto 0;
+  }
 }
 
 .illustrated__text {
   max-width: 29rem;
 }
 
+@media only screen and (max-width: 720px) {
+
+  .illustrated__text {
+    max-width: 100%;
+  }
+}
+
 .illustrated__heading {
   font-size: 3.10rem;
   line-height: 3.56rem;
   margin: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .illustrated__heading {
+    font-size: 2.50rem;
+    line-height:2.80rem ;
+  }
 }
 
 .illustrated__paragraph {
@@ -247,6 +451,13 @@ img {
   margin-right: -25px;
 }
 
+@media only screen and (max-width: 720px) {
+
+  .benefits {
+    flex-direction: column;
+  }
+}
+
 /**
  * Benefit block
  */
@@ -258,12 +469,19 @@ img {
   margin: 0 13px;
 }
 
+@media only screen and (max-width: 720px) {
+
+  .benefit {
+    margin: 0 auto 2.50rem;
+  }
+}
+
 .benefit__image {
   margin-left: 43px;
 }
 
 .benefit__heading {
-  margin: 20px 0;
+  margin: 1.25rem 0;
   font-size: 1.50rem;
   line-height: 2.25rem;
 }
@@ -290,17 +508,63 @@ img {
   margin-right: -21px;
 }
 
+@media only screen and (max-width: 1300px) {
+
+  .offer__header {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .offer__header {
+    flex-wrap: wrap;
+    margin-bottom: 3.10rem;
+  }
+}
+
 .offer__heading {
   max-width: 34rem;
   font-size: 3.75rem;
   line-height: 4.37rem;
   margin: 0 auto 0 0;
+}
 
+@media only screen and (max-width: 1300px) {
+
+  .offer__heading {
+    font-size: 3.12rem;
+    line-height: 3.70rem;
+    max-width: 100%;
+  }
+} 
+
+@media only screen and (max-width: 900px) {
+
+  .offer__heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .offer__heading {
+    font-size: 2.19rem;
+    line-height: 2.50rem;
+    margin-bottom: 1.55rem;
+  }
 }
 
 .offer__pricing {
   display: flex;
   margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .offer__pricing {
+    flex-direction: column;
+  }
 }
 
 /**
@@ -309,8 +573,8 @@ img {
 .pricing-plan {
   background: #F8F8F8;
   border-radius: 10px;
-  margin: 16px 0;
-  padding: 0 21px 27px;
+  margin: 1rem 0;
+  padding: 0 1.30rem 1.70rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -318,18 +582,60 @@ img {
   max-width: 20.60rem;
 }
 
+@media only screen and (max-width: 900px) {
+
+  .pricing-plan {
+    max-width: 50%;
+    width: 45%;
+    margin: 25px auto;
+    min-height: 27.80rem;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .pricing-plan {
+    max-width: 70%;
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .pricing-plan {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 .pricing-plan__level {
   color: #696871;
   font-size: 1.12rem;
   line-height: 1.75rem;
-  margin: 34px 0 22px 0;
+  margin: 2.12rem 0 1.38rem 0;
   font-weight: 400;
 }
 
 .pricing-plan__heading {
-  margin: 0 0 28px 0;
+  margin: 0 0 2.33rem 0;
   color: #1D293F;
   font-size: 3.75rem;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .pricing-plan__heading {
+    font-size: 3.12rem;
+    line-height: 3.70rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .pricing-plan__heading {
+    font-size: 2.50rem;
+  }
 }
 
 .pricing-plan__cost-period {
@@ -346,265 +652,57 @@ img {
  
 .pricing-plan__button { 
   width: 100%;
-  margin-top: 36px;
-  padding: 19px 60px;
+  margin-top: 2.25rem;
+  padding: 1.20rem;
 }
 
 .pricing-plan_optimal {
   background: #FF7143;
   color: #FFFFFF;
-  margin: 0 22px;
-  padding: 0 35px 43px;
+  margin: 0 1.38rem;
+  padding: 0 2.20rem 2.70rem;
   max-width: 23.50rem;
 }
 
+@media only screen and (max-width: 900px) {
+
+  .pricing-plan_optimal {
+    max-width: 55%;
+    width: 50%;
+    margin: auto;    
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .pricing-plan_optimal {
+    max-width: 75%;
+    width: 70%;    
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .pricing-plan_optimal {
+    max-width: 100%;
+    width: 100%;    
+  }
+}
+
 .pricing-plan_optimal > .pricing-plan__level {
-  margin-top: 3.1rem;
+  margin-top: 3.10rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (max-width: 900px) {
+
+  .pricing-plan_optimal > .pricing-plan__level {
+    margin-top: 2.13rem;
+  }
 }
 
 .pricing-plan_optimal > .pricing-plan__heading {
   color: inherit;
-}
-
-/**
- *Responsive from 1300px
- */
-@media only screen and (max-width: 1300px) {
-
-  h1 {
-    font-size: 3.75rem;
-    line-height: 3.4rem;
-  }
-
-  .wrapper {
-    padding: 0 50px;   
-  }
-
-  .hero {
-    margin-right: 0;
-  }
-
-  .illustrated__heading {
-    font-size: 2.5rem;
-    line-height:2.8rem ;
-  }
-
-  .offer__header {
-    margin-right: 0;
-  }
-
-  .offer__heading, .pricing-plan__heading {
-    font-size: 3.12rem;
-    line-height: 3.7rem;
-  }
-
-  .offer__heading {
-    max-width: 100%;  
-  }
-
-  .button-group {
-    margin-left: 30px;
-  }
-}
-
-/**
- *Responsive from 900px
- */
-@media only screen and (max-width: 900px) {
-
-  .header {
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin-bottom: 30px;
-  }
-
-  .nav {
-    margin: 0 auto 30px auto;
-  }
-
-  .button_primary {
-    margin-right: auto;
-  }
-
-  .hero {
-    flex-direction: column;
-    margin-top: 0;
-  }
-
-  .hero__text {
-    max-width: 100%;
-    margin-bottom: 92px;
-  }
-
-  .picture-group {
-    margin-top: 50px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .picture-group__item {
-    padding: 20px;
-  }
-
-  .indent-bottom {
-    margin-bottom: 75px;
-  }
-
-  .illustrated {
-    padding-right: 0;
-  }
-
-  .offer__pricing {
-    flex-direction: column;
-  }
-
-  .offer__heading {
-    text-align: center;
-  }
-
-  /* Прописывал width и max-width. По-другому почему-то не работает,
-  и переписывал для optimal ширину, лучше варианта не придумал. Писал height 
-  иначе они квадратные, херово смотрятся. Опять же, не придумал лучше*/
-  .pricing-plan {
-    max-width: 60%;
-    width: 60%;
-    margin: 25px auto;
-    min-height: 445px;
-    justify-content: space-around;
-  }
-
-  .pricing-plan_optimal {
-    max-width: 70%;
-    width: 70%;    
-  }
-
-  .pricing-plan_optimal > .pricing-plan__level {
-    margin-top: 34px;
-  }
-
-  .pricing-plan__button {
-    max-width: 55%;
-  }
-}
-
-/**
- *Responsive from 720px
- */
-@media only screen and (max-width: 720px) {
-
-  .nav {
-    padding-left: 0;
-  }
-
-  h1 {
-    font-size: 2.45rem;
-    line-height: 2.65rem;
-  }
-
-  .hero__text {
-    margin-bottom: 50px;
-  }
-
-  .link-arrow {
-    margin-top: 25px;
-  }
-
-  .illustrated {
-    flex-wrap: wrap;
-  }
-
-  .illustrated__text {
-    max-width: 100%;
-  }
-
-  .illustrated__image {
-    margin: 25px auto 0 auto;
-  }
-
-  .indent-bottom {
-    margin-bottom: 50px;
-  }
-
-  .benefits {
-    flex-direction: column;
-  }
-
-  .benefit {
-    margin: 0 auto 40px;
-  }
-
-  .offer__header {
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
-
-  .offer__heading {
-    font-size: 2.19rem;
-    line-height: 2.5rem;
-    margin-bottom: 25px;
-  }
-
-  .button-group {
-    margin: 0 auto;
-  }
-
-  .pricing-plan {
-    max-width: 75%;
-    width: 75%;
-    height: 100%;
-    justify-content: flex-start;
-    margin: 25px auto;
-  }
-
-  .pricing-plan_optimal {
-    max-width: 85%;
-    width: 85%;    
-  }
-
-  .pricing-plan__button {
-    max-width: 70%;
-    padding: 0;
-  }
-
-  .pricing-plan__heading {
-    font-size: 2.5rem;
-  }
-}
-
-/**
- *Responsive from 450px
- */
-@media only screen and (max-width: 450px) {
-
-  .wrapper {
-    padding: 0 30px;
-  }
-
-  h1 {
-    margin-top: 50px;
-  }
-
-  .link-arrow {
-    margin-left: 40%;
-  }
-
-  /*Пришлось так, иначе появляется ненужный оступ на второй 
-  синей кнопке*/
-  .hero__text > .button_secondary {
-    margin-top: 25px;
-  }
-
-  .button-group {
-    flex-direction: column;
-  }
-
-  .pricing-plan {
-    max-width: 100%;
-    width: 100%;
-  }
 }
 
 
