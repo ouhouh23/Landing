@@ -18,10 +18,17 @@ body {
 p {
   font-family: "Mulish", sans-serif;
   font-size: 1.25rem;
-  line-height: 1.90rem;
+  line-height: 1.52;
   color: #696871;
   margin: 0;
 }
+
+@media only screen and (max-width: 720px) {
+  p {
+    text-align: justify;
+  }
+}
+
 
 h1, h2, h3, h4, h5 {
   color: #19191B;
@@ -29,15 +36,14 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 5rem;
-  line-height: 4.80rem;
-  margin: 5.75rem 0 1.90rem;
+  line-height: 1;
+  margin: 5.75rem 0 1.9rem;
 }
 
 @media only screen and (max-width: 1300px) {
 
   h1 {
     font-size: 3.75rem;
-    line-height: 3.40rem;
   }
 }
 
@@ -45,14 +51,15 @@ h1 {
 
   h1 {
     font-size: 2.45rem;
-    line-height: 2.65rem;
+    line-height: 1.1;
   }
 }
 
 @media only screen and (max-width: 450px) {
 
   h1 {
-    margin-top: 3.10rem;
+    margin-top: 3.1rem;
+    text-align: center;
   }
 }
 
@@ -76,40 +83,40 @@ img {
  * Layout
  */
 .wrapper {
-  max-width: 1440px;
-  padding: 0 11.55rem;   
+  max-width: 1230px;
+  padding: 0 5rem;   
   margin: auto;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 720px) {
 
   .wrapper {
-    padding: 0 3.10rem;   
+    padding: 0 3.1rem;   
   }
 }
 
 @media only screen and (max-width: 450px) {
 
   .wrapper {
-    padding: 0 1.90rem;
+    padding: 0 1.9rem;
   }
 }
 
 .indent-bottom {
-  margin-bottom: 9.40rem;
+  margin-bottom: 9.4rem;
 }
 
 @media only screen and (max-width: 900px) {
 
   .indent-bottom {
-    margin-bottom: 4.70rem;
+    margin-bottom: 4.7rem;
   }
 }
 
 @media only screen and (max-width: 720px) {
 
   .indent-bottom {
-    margin-bottom: 3.10rem;
+    margin-bottom: 3.1rem;
   }
 }
 
@@ -137,7 +144,7 @@ img {
 @media only screen and (max-width: 900px) {
 
   .logo {
-    margin-bottom: 1.90rem;
+    margin-bottom: 1.9rem;
   }
 }
 
@@ -145,13 +152,13 @@ img {
  * Nav block
  */
 .nav {
-  padding-left: 48px; 
+  padding-left: 3rem; 
 }
 
 @media only screen and (max-width: 900px) {
 
   .nav {
-    margin: 0 auto 1.90rem;
+    margin: 0 auto 1.9rem;
   }
 }
 
@@ -165,15 +172,15 @@ img {
 .nav__link {
   display: inline-block;
   color: #696871;
-  margin-right: 48px;
+  margin-right: 3rem;
   font-weight: 600;
   font-size: 0.94rem;
-  line-height: 1.12rem;
+  line-height: 1.2;
 }
 
 .nav__link_active {
   color: #19191B;
-  padding-bottom: 10px;
+  padding-bottom: 0.63rem;
   border-bottom: 2px solid #5454D4;
 }
 
@@ -183,10 +190,10 @@ img {
 .button {
   color: #FFFFFF;
   font-size: 1.06rem;
-  line-height: 1.25rem;
-  border-radius: 10px;
+  line-height: 1.18;
+  border-radius: 0.63rem;
   border: none;
-  padding: 1.20rem 2.80rem;
+  padding: 1.2rem 2.8rem;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -235,16 +242,16 @@ img {
  */
 .button-group {
   max-width: 21.5rem;
-  border: 5px solid #F7F7FB;
+  border: 0.31rem solid #F7F7FB;
   background:#F7F7FB;
-  border-radius: 10px;
+  border-radius: 0.63rem;
   display: flex;
 }
 
 @media only screen and (max-width: 1300px) {
 
   .button-group {
-    margin-left: 1.90rem;
+    margin-left: 1.9rem;
   }
 }
 
@@ -264,16 +271,16 @@ img {
 
 .button-group__item {
   font-size: 1rem;
-  line-height: 1.20rem;
-  padding: 1.20rem 3.80rem;
+  line-height: 1.2;
+  padding: 1.2rem 3.8rem;
 }
 
 .button-group__item:first-child {
-  border-radius: 10px 0 0 10px;
+  border-radius: 0.63rem 0 0 0.63rem;
 }
 
 .button-group__item:last-child {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 0.63rem 0.63rem 0;
 }
 
 /**
@@ -282,14 +289,7 @@ img {
 .hero {
   display: flex;
   justify-content: space-between;
-  margin: 5.20rem -4.75rem 0 0;
-}
-
-@media only screen and (max-width: 1300px) {
-
-  .hero {
-    margin-right: 0;
-  }
+  margin: 5.2rem -4.75rem 0 0;
 }
 
 @media only screen and (max-width: 900px) {
@@ -297,6 +297,7 @@ img {
  .hero {
     flex-direction: column;
     margin-top: 0;
+    margin-right: 0;
   }
 }
 
@@ -304,30 +305,41 @@ img {
   max-width: 44%;
 }
 
+@media only screen and (max-width: 1300px) {
+
+  .hero__text {
+    margin-right: 3rem;
+  }
+}
+
 @media only screen and (max-width: 900px) {
 
   .hero__text {
     max-width: 100%;
     margin-bottom: 5.75rem;
+    margin-right: 0;
   }
 }
 
 @media only screen and (max-width: 720px) {
 
   .hero__text {
-    margin-bottom: 3.10rem;
+    margin-bottom: 3.1rem;
   }
 }
 
 .hero__image {
+  /*пиздец оно интересно работает конечно*/
   min-width: 0;
+  height: 1%;
+  align-self: flex-end;
 }
 
 .link-arrow {
   display: inline-block;
   width: 60px;
   height: 60px;
-  margin: 3.13rem 0 0 2.50rem;
+  margin: 3.13rem 0 0 2.5rem;
   padding: 16px 16px 16px 17px;
   border: 1px solid #E7E7E7;
   border-radius: 50%;
@@ -361,13 +373,13 @@ img {
 @media only screen and (max-width: 900px) {
 
   .picture-group {
-    margin-top: 3.10rem;
+    margin-top: 3.1rem;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
   .picture-group__item {
-    padding: 20px;
+    padding: 1.25rem;
   }
 }
 
@@ -377,9 +389,9 @@ img {
 .illustrated { 
   display: flex;
   justify-content: space-between;
-  margin-top: 4.70rem;
+  margin-top: 4.7rem;
   align-items: center;
-  padding-right: 6.60rem;
+  padding-right: 6.6rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -396,7 +408,7 @@ img {
   }
 
   .illustrated__image {
-    margin: 25px auto 0;
+    margin: 1.56rem auto 0;
   }
 }
 
@@ -412,27 +424,27 @@ img {
 }
 
 .illustrated__heading {
-  font-size: 3.10rem;
-  line-height: 3.56rem;
+  font-size: 3.1rem;
+  line-height: 1.15;
   margin: 0;
 }
 
 @media only screen and (max-width: 1300px) {
 
   .illustrated__heading {
-    font-size: 2.50rem;
-    line-height:2.80rem ;
+    font-size: 2.5rem;
+    line-height: 1.12;
   }
 }
 
 .illustrated__paragraph {
-  margin: 30px 0;
+  margin: 1.87rem 0;
 }
 
 .illustrated__link {
   color: #5454D4;
   font-size: 1.06rem;
-  line-height: 1.25rem;
+  line-height: 1.18;
   font-weight: 700;
 }
 
@@ -447,8 +459,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: -1.56rem;
+  margin-right: -1.56rem;
 }
 
 @media only screen and (max-width: 720px) {
@@ -466,30 +478,30 @@ img {
   max-width: 20rem;
   flex-direction: column;
   align-items: center;
-  margin: 0 13px;
+  margin: 0 0.82rem;
 }
 
 @media only screen and (max-width: 720px) {
 
   .benefit {
-    margin: 0 auto 2.50rem;
+    margin: 0 auto 2.5rem;
   }
 }
 
 .benefit__image {
-  margin-left: 43px;
+  margin-left: 2.7rem;
 }
 
 .benefit__heading {
   margin: 1.25rem 0;
-  font-size: 1.50rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .benefit__paragraph {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.50rem;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -504,8 +516,8 @@ img {
 .offer__header {
   display: flex;
   align-items: center;
-  margin-bottom: 5.10rem;
-  margin-right: -21px;
+  margin-bottom: 5.1rem;
+  margin-right: -1.3rem;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -519,14 +531,14 @@ img {
 
   .offer__header {
     flex-wrap: wrap;
-    margin-bottom: 3.10rem;
+    margin-bottom: 3.1rem;
   }
 }
 
 .offer__heading {
   max-width: 34rem;
   font-size: 3.75rem;
-  line-height: 4.37rem;
+  line-height: 1.17;
   margin: 0 auto 0 0;
 }
 
@@ -534,7 +546,7 @@ img {
 
   .offer__heading {
     font-size: 3.12rem;
-    line-height: 3.70rem;
+    line-height: 1.18;
     max-width: 100%;
   }
 } 
@@ -550,7 +562,7 @@ img {
 
   .offer__heading {
     font-size: 2.19rem;
-    line-height: 2.50rem;
+    line-height: 1.14;
     margin-bottom: 1.55rem;
   }
 }
@@ -572,14 +584,14 @@ img {
  */
 .pricing-plan {
   background: #F8F8F8;
-  border-radius: 10px;
+  border-radius: 0.63rem;
   margin: 1rem 0;
-  padding: 0 1.30rem 1.70rem;
+  padding: 0 1.3rem 1.7rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 20.60rem;
+  max-width: 20.6rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -587,8 +599,8 @@ img {
   .pricing-plan {
     max-width: 50%;
     width: 45%;
-    margin: 25px auto;
-    min-height: 27.80rem;
+    margin: 1.56rem auto;
+    min-height: 27.8rem;
     justify-content: space-around;
   }
 }
@@ -612,7 +624,7 @@ img {
 .pricing-plan__level {
   color: #696871;
   font-size: 1.12rem;
-  line-height: 1.75rem;
+  line-height: 1.56;
   margin: 2.12rem 0 1.38rem 0;
   font-weight: 400;
 }
@@ -627,14 +639,14 @@ img {
 
   .pricing-plan__heading {
     font-size: 3.12rem;
-    line-height: 3.70rem;
+    line-height: 1.19;
   }
 }
 
 @media only screen and (max-width: 720px) {
 
   .pricing-plan__heading {
-    font-size: 2.50rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -644,7 +656,7 @@ img {
 
 .pricing-plan_list {
   font-size: 1.06rem;
-  line-height: 3.12rem;
+  line-height: 2.94;
   font-family: "Mulush", sans-serif;
   text-align: center;
   margin: auto;
@@ -653,15 +665,15 @@ img {
 .pricing-plan__button { 
   width: 100%;
   margin-top: 2.25rem;
-  padding: 1.20rem;
+  padding: 1.2rem;
 }
 
 .pricing-plan_optimal {
   background: #FF7143;
   color: #FFFFFF;
   margin: 0 1.38rem;
-  padding: 0 2.20rem 2.70rem;
-  max-width: 23.50rem;
+  padding: 0 2.2rem 2.7rem;
+  max-width: 23.5rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -690,7 +702,7 @@ img {
 }
 
 .pricing-plan_optimal > .pricing-plan__level {
-  margin-top: 3.10rem;
+  margin-top: 3.1rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -704,9 +716,3 @@ img {
 .pricing-plan_optimal > .pricing-plan__heading {
   color: inherit;
 }
-
-
-
-
-
-
