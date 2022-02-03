@@ -29,7 +29,30 @@
           </ul>
         </nav>
         
-        <button type="button" class="button button_primary">Get started</button>  
+        <button type="button" class="button button_primary header__button">Get started</button>  
+
+        <label for="mobile-menu-checkbox" class="mobile-menu__button">
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </label>
+
+        <input type="checkbox" class="mobile-menu__checkbox" id="mobile-menu-checkbox"/>
+
+        <menu class="mobile-menu">
+          <nav class="nav mobile-menu__item">
+            <ul>
+              <li class="nav__link nav__link_active"><a href="#">Home</a></li>
+              <li class="nav__link"><a href="#">Features</a></li>
+              <li class="nav__link"><a href="#">Pricing</a></li>
+              <li class="nav__link"><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        
+          <button type="button" class="button button_primary">Get started</button> 
+        </menu>
       </header>
 
       <section class="hero">
