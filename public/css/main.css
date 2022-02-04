@@ -23,12 +23,6 @@ p {
   margin: 0;
 }
 
-@media only screen and (max-width: 720px) {
-  p {
-    text-align: justify;
-  }
-}
-
 h1, h2, h3, h4, h5 {
   color: #19191B;
 }
@@ -45,9 +39,9 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
   h1 {
-    font-size: 2.45rem;
+    font-size: 2.5rem;
     line-height: 1.1;
     text-align: center;
   }
@@ -202,8 +196,13 @@ img {
   border-bottom: 2px solid #5454D4;
 }
 
+@media only screen and (max-width: 1300px) {
+  .nav__link {
+    margin-right: 1.9rem;
+  }
+}
+
 @media only screen and (max-width: 900px) {
-  
   .nav__link {
     display: block;
     margin-right: 0;
@@ -258,7 +257,7 @@ img {
     padding: 0.9rem 1.6rem;
   }
 
-   .hero__text > .button_secondary {
+  .hero__text > .button_secondary {
     margin-top: 1.55rem;
   }
 }
@@ -328,9 +327,7 @@ img {
 }
 
 .hero__image {
-  /*пиздец оно интересно работает конечно*/
   min-width: 0;
-  height: 1%;
   align-self: flex-end;
 }
 
@@ -359,14 +356,16 @@ img {
   }
 
   .hero__text {
-    max-width: 100%;
+    max-width: 80%;
     margin-bottom: 5.75rem;
     margin-right: 0;
+    align-self: center;
   }
 }
 
 @media only screen and (max-width: 720px) {
   .hero__text {
+    max-width: 90%;
     margin-bottom: 3.1rem;
   }
 
@@ -376,6 +375,10 @@ img {
 }
 
 @media only screen and (max-width: 450px) {
+  .hero {
+    max-width: 100%;
+  }
+
   .link-arrow {
     width: 3.13rem;
     height: 3.13rem;
@@ -471,20 +474,25 @@ img {
 @media only screen and (max-width: 720px) {
   .illustrated {
     flex-wrap: wrap;
-    margin-left: 0;
+    max-width: 80%;
+    margin-top: 4.7rem;
+    margin-left: auto;
+    margin-right: auto;
   }
-
+ 
   .illustrated__image {
     max-width: 100%;
     margin: 1.56rem auto 0;
   }
 
-  .illustrated__text {
-    max-width: 100%;
-  }
-
   .illustrated__heading {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .illustrated {
+    max-width: 100%;
   }
 }
 
