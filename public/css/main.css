@@ -29,7 +29,6 @@ p {
   }
 }
 
-
 h1, h2, h3, h4, h5 {
   color: #19191B;
 }
@@ -50,6 +49,7 @@ h1 {
   h1 {
     font-size: 2.45rem;
     line-height: 1.1;
+    text-align: center;
   }
 }
 
@@ -163,6 +163,12 @@ img {
 }
 
 @media only screen and (max-width: 900px) {
+  /*Здесь пишу .nav, не работает 
+  в другом порядке написания*/
+  .nav {
+     display: none;
+  }
+
   .mobile-menu__button {
     display: block;
   }
@@ -197,10 +203,7 @@ img {
 }
 
 @media only screen and (max-width: 900px) {
-  .nav {
-    display: none;
-  }
-
+  
   .nav__link {
     display: block;
     margin-right: 0;
@@ -242,8 +245,8 @@ img {
   border: 1px solid #EAE9F2;
   color: #5454D4;
   font-weight: 500;
-
 }
+
 .button_dark {
   background: #9F3919;
   border: none;
@@ -333,8 +336,8 @@ img {
 
 .link-arrow {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   margin: 3.13rem 0 0 2.5rem;
   padding: 16px 16px 16px 17px;
   border: 1px solid #E7E7E7;
@@ -566,7 +569,6 @@ img {
   margin: 0;
 }
 
-
 @media only screen and (max-width: 1300px) {
   .offer__header {
     margin-right: 0;
@@ -601,7 +603,6 @@ img {
     line-height: 1.14;
   }
 }
-
 
 /**
  * Pricing Plan block
@@ -670,7 +671,11 @@ img {
 @media only screen and (max-width: 1300px) {
   .pricing-plan {
     width: 30%;
-    max-width: 35%;
+    max-width: 100%;
+  }
+
+  .pricing-plan_optimal {
+    width: 35%;
   }
 
   .pricing-plan__heading {
