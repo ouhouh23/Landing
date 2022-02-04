@@ -8,6 +8,7 @@
     <title>Saas Landing page</title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -57,20 +58,21 @@
 
       <section class="hero">
         <div class="hero__text">
-          <h1>Grow your subscription business</h1>
+          <h1 class="hero__heading">Grow your subscription business</h1>
 
           <p>
             Outcome-centered products that reduce churn, optimize pricing, 
             and grow your subscription business end-to-end.
           </p>
           
-          <button type="button" class="button button_secondary">Get started</button>
+          <div class="hero__buttons">
+            <button type="button" class="button button_secondary hero__button">Get started</button>
           
-          <a class="link-arrow" href="#">
-            <img src="assets/images/arrow-down.svg" alt="arrow"/>
-          </a>
+            <a class="arrow-button hero__arrow-button" href="#">
+              <img src="assets/images/arrow-down.svg" alt="arrow"/>
+            </a>
+          </div>
         </div>
-        
         <img class="hero__image" src="assets/images/hero1.png" alt="cool picture"/>
       </section>
 

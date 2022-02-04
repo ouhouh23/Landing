@@ -27,33 +27,6 @@ h1, h2, h3, h4, h5 {
   color: #19191B;
 }
 
-h1 {
-  font-size: 5rem;
-  line-height: 1;
-  margin: 5.75rem 0 1.9rem;
-}
-
-@media only screen and (max-width: 1300px) {
-  h1 {
-    font-size: 3.75rem;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  h1 {
-    font-size: 2.5rem;
-    line-height: 1.1;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  h1 {
-    margin-top: 3.1rem;
-    text-align: center;
-  }
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -256,10 +229,6 @@ img {
   .button {
     padding: 0.9rem 1.6rem;
   }
-
-  .hero__text > .button_secondary {
-    margin-top: 1.55rem;
-  }
 }
 
 /**
@@ -326,25 +295,44 @@ img {
   max-width: 44%;
 }
 
+
+.hero__heading {
+  font-size: 5rem;
+  line-height: 1;
+  margin: 5.75rem 0 1.9rem;
+}
+
 .hero__image {
   min-width: 0;
   align-self: flex-end;
 }
 
-.link-arrow {
-  display: inline-block;
+.hero__buttons {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 3.13rem;
+}
+
+
+.hero__arrow-button {
+  margin-left: 2.5rem;
+}
+
+.arrow-button {
   width: 3.75rem;
   height: 3.75rem;
-  margin: 3.13rem 0 0 2.5rem;
   padding: 16px 16px 16px 17px;
   border: 1px solid #E7E7E7;
   border-radius: 50%;
-  vertical-align: bottom;
 }
 
 @media only screen and (max-width: 1300px) {
   .hero__text {
     margin-right: 3rem;
+  }
+
+  .hero__heading {
+    font-size: 3.75rem;
   }
 }
 
@@ -361,6 +349,12 @@ img {
     margin-right: 0;
     align-self: center;
   }
+
+  .hero__heading {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -369,21 +363,28 @@ img {
     margin-bottom: 3.1rem;
   }
 
-  .link-arrow {
+  .hero__buttons {
     margin-top: 1.55rem;
+  }
+
+  .hero__arrow-button {
+    margin-left: 8%;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .hero {
+  .hero__text {
     max-width: 100%;
   }
 
-  .link-arrow {
+  .hero__heading {
+    margin-top: 3.1rem;
+  }
+
+  .arrow-button {
     width: 3.13rem;
     height: 3.13rem;
     padding: 0.75rem 0.75rem 0.75rem 0.81rem;
-    margin-left: 8%;
   }
 }
 
