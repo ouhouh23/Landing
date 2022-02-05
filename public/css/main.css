@@ -91,7 +91,6 @@ img {
   position: relative;
 }
 
-/*Норм ли такой вариант?*/
 .header__button {
   white-space: nowrap;
 }
@@ -130,8 +129,6 @@ img {
 }
 
 @media only screen and (max-width: 900px) {
-  /*Здесь пишу .nav, не работает 
-  в другом порядке написания*/
   .nav {
      display: none;
   }
@@ -312,7 +309,6 @@ img {
   align-items: flex-end;
   margin-top: 3.13rem;
 }
-
 
 .hero__arrow-button {
   margin-left: 2.5rem;
@@ -694,7 +690,6 @@ img {
 }
 
 @media only screen and (max-width: 900px) {
-
   .pricing-plan {
     max-width: 100%;
     width: 22rem;
